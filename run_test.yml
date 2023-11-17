@@ -1,0 +1,10 @@
+---
+- name: run test command
+  hosts: 192.168.0.195
+  tasks:
+    - name: create user on 192.168..195
+      ansible.builtin.user:
+        name: aap_user
+        group: wheel
+        uid: 1008
+
